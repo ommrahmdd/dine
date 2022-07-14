@@ -211,4 +211,49 @@
   font-size: 1.5rem;
   letter-spacing: 0.3rem;
 }
-/*------------------------------  END FOOTER SECTION */ ;
+/*------------------------------  END FOOTER SECTION */
+
+@media only screen and (max-width: 375px) {
+  html {
+    font-size: 7px !important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  html {
+    font-size: 9px;
+  }
+  .header {
+    padding-bottom: 5rem;
+    margin-bottom: 5rem;
+    overflow: hidden;
+  }
+  .logo {
+    margin-top: 2rem;
+  }
+  .enjoy__left,
+  .most__left,
+  .family__left {
+    display: flex;
+    justify-content: center;
+  }
+  .enjoy__left img,
+  .most__left img {
+    margin: 5rem 0;
+  }
+  .enjoy__overlay,
+  .most__overlay {
+    left: 5%;
+    top: 60%;
+    width: 15rem !important;
+  }
+  .highlight__left {
+    display: flex;
+    align-items: center;
+  }
+  .highlight__left .dot {
+    align-self: flex-start;
+  }
+  .family__left img {
+    margin-bottom: 4rem;
+  }
+}
