@@ -1,0 +1,214 @@
+.header {
+  height: 100vh;
+  background-color: black;
+  overflow-x: hidden;
+  padding-left: 5rem;
+}
+.header__left {
+  color: var(--whiteColor);
+  padding: 2rem 0;
+}
+.header__left .logo {
+  font-size: 3rem;
+  margin-bottom: 10rem;
+}
+.logo__link {
+  color: var(--whiteColor);
+  text-decoration: none;
+}
+.logo__link:hover {
+  color: white;
+}
+.header__left-txt {
+  color: var(--greyColor);
+}
+.header__left-txt h1 {
+  font-size: 7.5rem;
+  font-weight: 100;
+  margin-bottom: 3.5rem;
+}
+.header__left-txt p {
+  font-size: 1.6rem;
+  margin-bottom: 3.5rem;
+  font-weight: 100;
+}
+.primaryBtn,
+.secondaryBtn {
+  background-color: transparent;
+  padding: 0.7rem 3.5rem;
+  font-size: 1.6rem;
+  transition: all 0.3s ease;
+}
+.primaryBtn {
+  color: var(--whiteColor);
+  border: 0.1rem solid var(--whiteColor);
+  background-color: var(--blackColor);
+  font-weight: 600;
+}
+.secondaryBtn {
+  color: var(--whiteColor);
+  border: 0.1rem solid var(--whiteColor);
+  font-weight: 400;
+}
+.primaryBtn:hover,
+.secondaryBtn:hover {
+  border: 0.1rem solid transparent;
+}
+.secondaryBtn:hover {
+  background-color: transparent;
+  color: var(--blackColor);
+  border: 0.1rem solid var(--blackColor);
+}
+
+.header__right {
+  /* background-image: url("./../../asset/header.jpg"); */
+  /* background-size: cover; */
+  position: relative;
+}
+.header__right-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, black, rgba(0, 0, 0, 0.404));
+}
+.header__right img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+/*------------------------------  END HEADER */
+/*------------------------------  START ENJOY SECITON AND MOST SECTION*/
+
+.enjoy__right-txt h2,
+.highlight__right-txt h2,
+.most__right-txt h2 {
+  font-size: 4rem;
+}
+.enjoy__right-txt p,
+.highlight__right-txt p,
+.most__right-txt p {
+  width: 40rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-top: 2rem;
+}
+
+.enjoy__left img,
+.most__left img {
+  width: 40rem;
+  box-shadow: 0.1rem 1rem 2rem rgba(0, 0, 0, 0.801);
+}
+.enjoy__left img {
+  margin-top: -10rem;
+}
+.most__left img {
+  margin-bottom: -10rem;
+}
+.enjoy__overlay,
+.most__overlay {
+  position: absolute;
+  /* right: 10%; */
+  top: 35%;
+  left: 20%;
+  height: 25rem;
+  width: 45rem !important;
+  background-color: rgba(0, 0, 0, 0.037);
+  border-top-right-radius: 5rem;
+  z-index: -1;
+}
+.dot {
+  opacity: 0.2;
+  margin-bottom: 2rem;
+}
+.dot__dot {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  border: 0.1rem solid var(--blackColor);
+}
+.dot__dash {
+  width: 10rem;
+  height: 0.1rem;
+  background-color: var(--blackColor);
+  margin-left: 1rem;
+}
+/*------------------------------  END ENJOY SECITON AND MOST SECITON */
+/*------------------------------  START HIGHLIGHT SECTION */
+.highlight {
+  padding: 10rem 0;
+  background-color: var(--blackColor);
+  color: var(--whiteColor);
+  margin-top: 5rem;
+}
+.highlight .dot__dot {
+  border: 0.1rem solid var(--whiteColor);
+}
+.highlight .dot__dash {
+  background-color: var(--whiteColor);
+}
+.cat__box {
+  margin-bottom: 2rem;
+  color: var(--greyColor);
+}
+.cat__box img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  object-position: center;
+}
+.cat__box div h3 {
+  margin-bottom: 1rem;
+}
+.cat__box div p {
+  font-size: 1.4rem;
+  width: 30rem;
+  font-weight: 300;
+}
+/*------------------------------  START HIGHLIGHT SECTION */
+/*------------------------------  START FAMILY SECTION */
+.family {
+  padding: 10rem 0;
+}
+.family__left img {
+  width: 40rem;
+  height: 50rem;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0.1rem 1rem 2rem rgba(0, 0, 0, 0.801);
+}
+/*------------------------------  END FAMILY SECTION */
+/*------------------------------  START RESERVE SECTION */
+.reserve {
+  background: linear-gradient(rgba(0, 0, 0, 0.819), rgba(0, 0, 0, 0.863)),
+    url("./../../asset/reserve.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: center;
+  padding: 9rem 0;
+}
+.reserve__left h3 {
+  font-size: 4rem;
+  color: var(--whiteColor);
+  /* text-transform: uppercase; */
+  font-weight: 600;
+}
+/*------------------------------  END RESERVE SECTION */
+/*------------------------------  START FOOTER SECTION */
+.footer {
+  padding: 5rem 0;
+  background-color: var(--blackColor);
+  color: var(--whiteColor);
+}
+.footer__col h2 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+.footer__col p {
+  color: var(--greyColor);
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+}
+/*------------------------------  END FOOTER SECTION */ ;
