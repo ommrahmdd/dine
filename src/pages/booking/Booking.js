@@ -114,6 +114,25 @@ export default function Booking() {
           </div>
         </div>
       </div>
+      <div className="footer mt-5">
+        <div className="container">
+          <div className="row justify-content-center ">
+            <div className="col-md-4 footer__col  py-m-1 py-5">
+              <h2>dine</h2>
+            </div>
+            <div className="col-md-4 footer__col py-m-1 py-5">
+              <p>MARTHWAITE, SEDBERGH </p>
+              <p>CUMBRIA </p>
+              <p>+00 44 123 4567</p>
+            </div>
+            <div className="col-md-4 footer__col py-m-1 py-5">
+              <p>OPEN TIMES </p>
+              <p>MON - FRI: 09:00 AM - 10:00 PM</p>
+              <p>SAT - SUN: 09.00 AM - 11:30 PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

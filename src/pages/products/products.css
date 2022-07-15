@@ -1,0 +1,46 @@
+.products__ourProducts {
+  font-size: 2.6rem;
+  font-weight: 300;
+}
+.products__products-box {
+  margin: 2rem 0;
+  transition: all 0.3s ease;
+}
+.products__products-box img {
+  width: 18rem;
+  height: 10rem;
+  object-fit: cover;
+  object-position: center;
+  margin-right: 4rem;
+}
+.products__products-box:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.box__txt {
+  line-height: 1.2;
+}
+.box__txt h3 {
+  font-size: 2.5rem;
+}
+.box__txt p {
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+.box__txt span {
+  font-size: 1.4rem;
+  margin-right: 2rem;
+  opacity: 0.7;
+}
+.box__txt a:link,
+.box__txt a:visited {
+  font-size: 1.4rem;
+  color: var(--blackColor);
+}
+.box__link {
+  color: var(--blackColor);
+  text-decoration: none;
+}
+.box__link:hover {
+  color: var(--blackColor);
+}
