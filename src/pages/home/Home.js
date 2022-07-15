@@ -43,7 +43,9 @@ export default function Home() {
                 <br />
                 Eat the freshest produce from the comfort of our farmhouse.
               </p>
-              <button className="primaryBtn">View More</button>
+              <Link to="/products" className="primaryLink">
+                <button className="primaryBtn">View More</button>
+              </Link>
             </div>
           </div>
           <div className="col-md-6 d-md-block d-none  header__right">
@@ -187,7 +189,9 @@ export default function Home() {
                 <h3>Ready to make a reservation?</h3>
               </div>
               <div className="col-md-6 reserve__right d-flex justify-content-center">
-                <button className="secondaryBtn">Book a title</button>
+                <Link to="/table">
+                  <button className="primaryBtn">Book a title</button>
+                </Link>
               </div>
             </div>
           </div>

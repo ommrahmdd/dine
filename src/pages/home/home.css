@@ -34,7 +34,6 @@
 }
 .primaryBtn,
 .secondaryBtn {
-  background-color: transparent;
   padding: 0.7rem 3.5rem;
   font-size: 1.6rem;
   transition: all 0.3s ease;
@@ -46,8 +45,10 @@
   font-weight: 600;
 }
 .secondaryBtn {
-  color: var(--whiteColor);
-  border: 0.1rem solid var(--whiteColor);
+  color: var(--blackColor);
+  background-color: var(--whiteColor);
+
+  border: 0.1rem solid var(--blackColor);
   font-weight: 400;
 }
 .primaryBtn:hover,
@@ -59,7 +60,13 @@
   color: var(--blackColor);
   border: 0.1rem solid var(--blackColor);
 }
-
+.primaryLink {
+  text-decoration: none;
+  color: var(--whiteColor);
+}
+.primaryLink:hover {
+  color: var(--whiteColor);
+}
 .header__right {
   /* background-image: url("./../../asset/header.jpg"); */
   /* background-size: cover; */
@@ -96,7 +103,8 @@
 }
 
 .enjoy__left img,
-.most__left img {
+.most__left img,
+.booking__right img {
   width: 40rem;
   box-shadow: 0.1rem 1rem 2rem rgba(0, 0, 0, 0.801);
 }

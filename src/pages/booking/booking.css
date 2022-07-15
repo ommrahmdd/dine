@@ -1,0 +1,62 @@
+.logo {
+  color: var(--blackColor);
+  text-decoration: none;
+  font-size: 5rem;
+  /* margin-bottom: 3rem; */
+  padding: 4rem 0;
+  display: inline-block;
+}
+.logo:hover {
+  color: var(--blackColor);
+}
+/* Booking image styling in home.css file */
+.booking__right img {
+  height: 50rem;
+  object-fit: cover;
+  object-position: bottom;
+}
+.overlay__photo {
+  z-index: -1;
+  opacity: 0.06;
+  left: 0;
+}
+.formBox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.formBox label {
+  font-size: 1.6rem;
+  color: var(--blackColor);
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+  text-transform: capitalize;
+}
+.formBox input {
+  padding: 0.8rem 1rem;
+  padding-left: 2rem;
+  border-radius: 0.6rem;
+  outline: none;
+  border: 0.1rem solid rgba(0, 0, 0, 0.215);
+  font-size: 1.5rem;
+  width: 35rem;
+  transition: all 0.3s ease;
+}
+.formBox input::placeholder {
+  text-transform: capitalize;
+  /* padding-left: 1rem; */
+}
+.formBox input:focus {
+  border: 0.1rem solid black;
+}
+.formBox input[type="number"] {
+  width: 10rem;
+}
+
+.booking__backLink {
+  color: var(--blackColor);
+  text-decoration: none;
+}
+.booking__backLink:hover {
+  color: var(--blackColor);
+}
