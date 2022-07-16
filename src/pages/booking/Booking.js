@@ -100,14 +100,16 @@ export default function Booking() {
                 />
               </div>
               <div className="d-flex justify-content-end mt-5">
-                <button className="secondaryBtn">
-                  <Link to="/" className="booking__backLink">
-                    Back
-                  </Link>
+                <button type="submit" className="primaryBtn ms-2">
+                  Book
                 </button>
-                <button className="primaryBtn ms-2">Book</button>
               </div>
             </form>
+            <button className="secondaryBtn mt-3">
+              <Link to="/" className="booking__backLink">
+                Back
+              </Link>
+            </button>
           </div>
           <div className=" col-md-6 booking__right d-md-flex justify-content-center  d-none">
             <img src={require("./../../asset/booking.jpg")} />

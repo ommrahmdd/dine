@@ -37,6 +37,8 @@
   padding: 0.7rem 3.5rem;
   font-size: 1.6rem;
   transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
 }
 .primaryBtn {
   color: var(--whiteColor);
@@ -161,7 +163,7 @@
   color: var(--greyColor);
 }
 .cat__box img {
-  width: 10rem;
+  width: 13rem;
   height: 10rem;
   object-fit: cover;
   object-position: center;

@@ -8,7 +8,7 @@
 }
 .products__products-box img {
   width: 18rem;
-  height: 10rem;
+  height: 13rem;
   object-fit: cover;
   object-position: center;
   margin-right: 4rem;
@@ -43,4 +43,17 @@
 }
 .box__link:hover {
   color: var(--blackColor);
+}
+.products__overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 90%;
+  height: 90%;
+  z-index: -10;
+  background-image: url("./../../asset/produts.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  opacity: 0.1;
 }

@@ -7,24 +7,17 @@ import axios from "axios";
 export default function Home() {
   let [sample, setSample] = useState([]);
 
-  // useEffect(() => {
-  //   axios
-  //     .get(
-  //       "https://api.spoonacular.com/food/menuItems/search?apiKey=0a6c1f585c6b4497a2143f20813504fb&query=burger&number=3",
-  //       {
-  //         headers: {
-  //           "Content-type": "application/json",
-  //         },
-  //       }
-  //     )
-  //     .then((res) => {
-  //       console.log(res);
-  //       setSample(res.data.menuItems);
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //     });
-  // }, []);
+  useEffect(() => {
+    axios
+      .get("http://localhost:9000/api/v1/dine/products")
+      .then((data) => {
+        console.log(data.data.data);
+        setSample(data.data.data.products.splice(0, 3));
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
   return (
     <>
@@ -43,7 +36,7 @@ export default function Home() {
                 <br />
                 Eat the freshest produce from the comfort of our farmhouse.
               </p>
-              <Link to="/products" className="primaryLink">
+              <Link to="/products?page=1" className="primaryLink">
                 <button className="primaryBtn">View More</button>
               </Link>
             </div>
@@ -141,19 +134,19 @@ export default function Home() {
                     </p>
                   </div>
                 </div> */}
-                {/* 
+
                 {sample.map((item, index) => (
                   <div
                     className="cat__box d-flex flex-md-row flex-column justify-content-around"
                     key={index}
                   >
-                    <img src={item.image} />
+                    <img src={item.img} />
                     <div>
                       <h3>{item.title}</h3>
-                      <p>{item.restaurantChain}</p>
+                      <p>{item.category}</p>
                     </div>
                   </div>
-                ))} */}
+                ))}
               </div>
             </div>
           </div>

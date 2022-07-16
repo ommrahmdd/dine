@@ -10,6 +10,9 @@
   color: var(--blackColor);
 }
 /* Booking image styling in home.css file */
+.booking__left {
+  padding: 5rem 0;
+}
 .booking__right img {
   height: 50rem;
   object-fit: cover;
@@ -17,7 +20,7 @@
 }
 .overlay__photo {
   z-index: -1;
-  opacity: 0.06;
+  opacity: 0.03;
   left: 0;
 }
 .formBox {
